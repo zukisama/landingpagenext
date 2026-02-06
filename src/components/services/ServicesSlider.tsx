@@ -139,7 +139,24 @@ export default function ServiceSlider() {
   const right = clamp(active + 1);
 
   return (
-    <div className="max-w-7xl mx-auto px-6">
+  <section
+    id="services"
+    className="
+      relative
+      scroll-mt-28
+      bg-white
+      py-28
+      z-20
+    "
+  >
+    {/* watermark */}
+    <div className="pointer-events-none absolute top-6 left-1/2 -translate-x-1/2">
+      <div className="text-[120px] font-extrabold tracking-wider text-gray-900/5">
+        Services
+      </div>
+    </div>
+
+    <div className="relative max-w-7xl mx-auto px-6">
       {/* HEADER */}
       <motion.div
         variants={containerVariants}
@@ -197,19 +214,21 @@ export default function ServiceSlider() {
         <div className="mt-12 flex justify-center items-center gap-6">
           <button
             onClick={prev}
-            className="h-11 w-11 rounded-full border bg-white"
+            className="h-11 w-11 rounded-full border bg-white hover:bg-gray-100 transition"
           >
             <ChevronLeft className="mx-auto h-5 w-5" />
           </button>
 
           <button
             onClick={next}
-            className="h-11 w-11 rounded-full border bg-white"
+            className="h-11 w-11 rounded-full border bg-white hover:bg-gray-100 transition"
           >
             <ChevronRight className="mx-auto h-5 w-5" />
           </button>
         </div>
       </motion.div>
     </div>
-  );
+  </section>
+);
+
 }

@@ -1,15 +1,23 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import ServicesSection from "@/components/services/ServicesSection";
+import ServicesSlider from "@/components/services/ServicesSlider";
+import PortfolioSlider from "@/components/portfolio/PortfolioSlider";
+import CTA from "@/components/CTA";
+import Footer from "@/components/Footer";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
-      <ServicesSection />
+      <main>
+        <Hero />
+        <About />
+        <ServicesSlider />
+        <PortfolioSlider />
+        <CTA />
+      </main>
+      <Footer />
     </>
   );
 }
