@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useSectionAnimation } from "@/hooks/useSectionAnimation";
+import SectionWatermark from "@/components/ui/SectionWatermark";
+
 
 export default function About() {
   const {
@@ -17,11 +19,7 @@ export default function About() {
   return (
     <section id="about" className="relative py-28 bg-white scroll-mt-23 overflow-hidden">
       {/* Watermark */}
-      <div className="pointer-events-none select-none absolute top-10 left-0">
-        <span className="text-[120px] md:text-[160px] font-extrabold tracking-widest text-gray-900/5">
-          ABOUT US
-        </span>
-      </div>
+     <SectionWatermark text="ABOUT US" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 

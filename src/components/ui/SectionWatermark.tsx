@@ -10,24 +10,20 @@ export default function SectionWatermark({
   return (
     <div
       className={[
-        "pointer-events-none select-none absolute",
-        "-top-8 left-1/2 -translate-x-1/2",
+        "pointer-events-none select-none absolute w-full flex justify-center",
+        "top-10 left-0", // Sesuaikan jarak atas di sini
         className,
       ].join(" ")}
     >
       <span
-        className="
-          block whitespace-nowrap leading-none
-          font-extrabold tracking-widest
-          text-gray-900/5
-          text-[56px]
-          sm:text-[72px]
-          md:text-[100px]
-          lg:text-[140px]
-          xl:text-[160px]
-        "
+        className="block whitespace-nowrap leading-none font-extrabold tracking-[0.2em] text-gray-900/5 uppercase"
         style={{
-          WebkitTextStroke: "1px rgba(0,0,0,0.04)",
+          /* Batas bawah: 60px (mobile)
+             Ukuran ideal: 15vw (lebar layar)
+             Batas atas: 160px (desktop besar)
+          */
+          fontSize: "clamp(40px, 10vw, 100px)",
+          WebkitTextStroke: "1px rgba(0,0,0,0.02)", // Opsional: garis tepi tipis
         }}
       >
         {text}
