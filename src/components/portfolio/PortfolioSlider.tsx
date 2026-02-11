@@ -52,7 +52,7 @@ export default function PortfolioSlider() {
   const right = clamp(active + 1);
 
   return (
-    <section id="portfolio" className="relative py-28 bg-white overflow-hidden">
+    <section id="portfolio" className="relative scroll-mt-28 py-28 bg-white overflow-hidden">
       {/* WATERMARK */}
       <SectionWatermark text="Portfolio" />
 

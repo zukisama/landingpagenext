@@ -17,7 +17,7 @@ export default function About() {
   });
 
   return (
-    <section id="about" className="relative py-28 bg-white scroll-mt-23 overflow-hidden">
+    <section id="about" className="relative py-28 bg-white scroll-mt-20 overflow-hidden">
       {/* Watermark */}
      <SectionWatermark text="ABOUT US" />
 

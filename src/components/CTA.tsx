@@ -16,7 +16,7 @@ export default function CTA() {
       id="contact"
       className="
         relative
-        scroll-mt-28
+        scroll-mt-20
         bg-[#e3e6ed]
         py-28
         overflow-hidden
