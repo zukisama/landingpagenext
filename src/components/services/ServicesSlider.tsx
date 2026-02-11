@@ -1,5 +1,6 @@
 "use client";
 
+import SectionWatermark from "../ui/SectionWatermark";
 import { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -150,11 +151,7 @@ export default function ServiceSlider() {
     "
   >
     {/* watermark */}
-    <div className="pointer-events-none absolute top-6 left-1/2 -translate-x-1/2">
-      <div className="text-[120px] font-extrabold tracking-wider text-gray-900/5">
-        Services
-      </div>
-    </div>
+    <SectionWatermark text="Services" />
 
     <div className="relative max-w-7xl mx-auto px-6">
       {/* HEADER */}

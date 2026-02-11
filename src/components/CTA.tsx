@@ -1,5 +1,5 @@
 "use client";
-
+import SectionWatermark from "./ui/SectionWatermark";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useSectionAnimation } from "@/hooks/useSectionAnimation";
@@ -17,9 +17,10 @@ export default function CTA() {
       className="
         relative
         scroll-mt-28
+        bg-[#e3e6ed]
         py-28
         overflow-hidden
-        z-20
+        z-10
       "
     >
       {/* GRADIENT BACKGROUND */}
@@ -30,11 +31,7 @@ export default function CTA() {
       <div className="absolute -bottom-32 -right-32 h-96 w-96 bg-white/10 rounded-full blur-3xl pointer-events-none" />
 
       {/* WATERMARK */}
-      <div className="pointer-events-none absolute top-10 left-1/2 -translate-x-1/2">
-        <span className="text-[120px] md:text-[160px] font-extrabold tracking-widest text-white/5">
-          Contact
-        </span>
-      </div>
+      <SectionWatermark text="Contact" isDark={true}  />
 
       {/* CONTENT */}
       <div className="relative max-w-5xl mx-auto px-6 text-center">

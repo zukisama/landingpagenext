@@ -69,22 +69,12 @@ export default function Navbar() {
           </nav>
 
           {/* DESKTOP CTA */}
-          <div className="hidden md:block">
-            <button
-              onClick={() => handleNavClick("#contact", "trigger-cta-animation")}
-              className={`px-6 py-3 rounded-full font-semibold transition ${
-                scrolled
-                  ? "bg-gray-900 text-white hover:bg-gray-800"
-                  : "bg-white text-gray-900 hover:bg-gray-200"
-              }`}
-            >
-              Get Quote
-            </button>
-          </div>
-
           {/* MOBILE BUTTON */}
           <button
-            className="md:hidden text-white"
+            className={`md:hidden transition-colors duration-300 ${
+              // Jika navbar sudah discroll atau menu sedang terbuka (bg putih), gunakan teks hitam
+              scrolled || open ? "text-gray-900" : "text-white"
+            }`}
             onClick={() => setOpen(!open)}
           >
             {open ? <X className="h-7 w-7" /> : <Menu className="h-7 w-7" />}
@@ -94,7 +84,7 @@ export default function Navbar() {
 
       {/* MOBILE MENU */}
       <div
-        className={`md:hidden fixed left-0 right-0 top-20 z-40 transition-all duration-300 ${
+        className={`md:hidden flex-wrap fixed left-0 right-0 top-20 z-40 transition-all duration-300 ${
           open ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
@@ -108,13 +98,6 @@ export default function Navbar() {
               {item.label}
             </button>
           ))}
-
-          <button
-            onClick={() => handleNavClick("#contact", "trigger-cta-animation")}
-            className="mt-4 w-full rounded-full bg-gray-900 text-white py-3 font-semibold"
-          >
-            Get Quote
-          </button>
         </div>
       </div>
     </header>

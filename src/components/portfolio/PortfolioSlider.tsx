@@ -1,5 +1,6 @@
 "use client";
 
+import SectionWatermark from "../ui/SectionWatermark";
 import { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -53,11 +54,7 @@ export default function PortfolioSlider() {
   return (
     <section id="portfolio" className="relative py-28 bg-white overflow-hidden">
       {/* WATERMARK */}
-      <div className="pointer-events-none select-none absolute -top-8 left-1/2 -translate-x-1/2">
-        <span className="text-[100px] md:text-[140px] font-extrabold tracking-widest text-gray-900/5">
-          Projects
-        </span>
-      </div>
+      <SectionWatermark text="Portfolio" />
 
       <div className="max-w-7xl mx-auto px-6">
         {/* HEADER */}
