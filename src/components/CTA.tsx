@@ -59,7 +59,7 @@ export default function CTA() {
 
           <motion.div variants={itemVariants}>
             <a
-              href="https://wa.me/628xxxxxxxxxx"
+              href="https://wa.me/6285777249436?text=Halo%20saya%20ingin%20konsultasi%20IT"
               target="_blank"
               rel="noopener noreferrer"
               className="
