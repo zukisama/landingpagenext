@@ -23,19 +23,29 @@ export default function PortfolioSlider() {
   const projects: PortfolioItem[] = useMemo(
     () => [
       {
-        title: "Business Growth",
-        category: "Business Strategy",
-        image: "/images/portfolio-1.jpeg",
+        title: "Instalasi Server HP",
+        category: "Setup sekaligus Instalasi Server HP Untuk Perusahaan",
+        image: "/images/portfolio-2.jpg",
       },
       {
-        title: "Startup Solution",
-        category: "Business Strategy",
-        image: "/images/portfolio-2.jpeg",
+        title: "Instalasi Firewall Fortinet",
+        category: "Instalasi Fortinet untuk jaringan perkantoran",
+        image: "/images/portfolio-4.jpg",
       },
       {
-        title: "Enterprise Network",
-        category: "IT Infrastructure",
+        title: "Pembuatan Website Company Profile",
+        category: "Aplikasi Perusahaan",
         image: "/images/portfolio-3.jpg",
+      },
+      {
+        title: "Live Streaming Hybrid Zoom",
+        category: "Acara Hybrid Zoom rapat perusahaan",
+        image: "/images/portfolio-5.jpg",
+      },
+      {
+        title: "Penggantian perangkat Router CISCO di perusahaan",
+        category: "Penggantian perangkat jaringan CISCO",
+        image: "/images/portfolio-7.jpg",
       },
     ],
     []

@@ -45,8 +45,8 @@ export default function Hero() {
           </motion.h1>
 
           <motion.p variants={itemVariants} className="text-lg text-gray-200 mb-10">
-            Dari instalasi jaringan hingga pengembangan aplikasi sistem
-            informasi, kami hadir sebagai mitra teknologi terpercaya
+            Dari instalasi jaringan, pengembangan aplikasi sistem
+            informasi, CCTV hingga layanan Live Streaming, kami hadir sebagai mitra teknologi terpercaya
             untuk solusi IT tanpa batas.
           </motion.p>
 
